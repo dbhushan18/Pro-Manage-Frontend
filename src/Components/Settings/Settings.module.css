@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.settings_container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 2rem;
+    width: 40vw;
+    height: 100vh;
+    font-family: "Open Sans", sans-serif;
+}
+
+#settings_text {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bolder;
+    font-size: 28px;
+    font-weight: 500;
+    color: #343434;
+    margin-bottom: 2rem;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.8rem;
+}
+.fields {
+    width: 28vw;
+    height: 3vw;
+    border: 1px solid #d0d0d0;
+    border-radius: 10px;
+    padding: 12px 20px 12px 50px;
+    font-size: 15px;
+    outline: none;
+}
+
+.fields::placeholder {
+    color: #828282;
+
+}
+
+#profile {
+    background-image: url('../../assets/Profile.png');
+    background-position: 0.6rem 0.6rem;
+    background-repeat: no-repeat;
+}
+
+.password {
+    background-image: url('../../assets/Password.png');
+    background-position: 0.3rem 0.3rem;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#eye_img {
+    position: absolute;
+    left: 41rem;
+    top: 10.5rem;
+    cursor: pointer;
+}
+
+#eye_img2{
+    position: absolute;
+    left: 41rem;
+    top: 14.9rem;
+    cursor: pointer;
+}
+
+.main-container button {
+    width: 28vw;
+    height: 2.5vw;
+    border: transparent;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#update {
+    background: #17A2B8;
+    color: #ffffff;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 28vw;
+    height: 2.5vw;
+    border: transparent;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+
+}

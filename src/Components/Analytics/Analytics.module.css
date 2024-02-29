@@ -1,0 +1,44 @@
+#analytics_text{
+    margin: 2rem;
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: #343434;
+}
+
+.analytics_items{
+    display: flex;
+    gap: 2rem;
+    margin: 2rem;
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+}
+
+.count_boxes{
+    background-color: #F9FCFF;
+    width: 25vw;
+    height: auto;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.count_boxes ul li {
+    display: flex;
+    align-items: center; 
+}
+
+.count_boxes ul li::before {
+    content: "•"; 
+    color: #90C4CC;
+    margin-right: 0.4rem; 
+    font-size: 35px;
+}
+
+.count_boxes ul li span {
+    flex-grow: 1; 
+    text-align: left;
+}

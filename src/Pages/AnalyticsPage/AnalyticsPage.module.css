@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.analytics_container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+.sidebar {
+    width: 16%;
+}
+
+.analytics{
+    flex: 1;
+}

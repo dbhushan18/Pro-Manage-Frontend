@@ -1,0 +1,192 @@
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.modal,
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+}
+
+.overlay {
+    background: #303D438C;
+
+}
+
+.modal_content{
+    font-family: "Inter", sans-serif;
+    position: absolute;
+    padding: 2rem;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: #ffffff;
+    width: 34vw;
+    height: 63vh;
+    border-radius: 15px;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.title_section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#title{
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#title::after ,.text::after{
+    content: ' *';
+    color: red;
+}
+
+#card_title{
+    width: 29vw;
+    height: 5vh;
+    border: 1px solid #e2e2e2;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    outline: none;
+    color: #000000;
+    border-radius: 5px;
+}
+
+#card_title::placeholder{
+    color: #9B959F;
+}
+
+.text{
+    font-weight: 600;
+    font-size: 13px;
+}
+
+
+
+.priority{
+    display: flex;
+    gap: 0.3rem;
+}
+
+.priority_list{
+    list-style: none;
+    width: fit-content;
+    border: 1px solid #e2e2e2;
+    margin-right: 0.3rem;
+    font-size: 10px;
+    color: #767575;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.priorities{
+  display: flex;
+}
+
+.selected {
+    background-color: #e2e2e2;
+    color: #000000;
+  }
+
+.chip{
+    display: flex;
+}
+
+#add_btn{
+    color:#767575;
+    border: none;
+    cursor: pointer;
+    background-color: #ffffff;
+    align-items: flex-start;
+    display: flex;
+}
+
+.btns{
+    margin-top: 1rem;
+    position: absolute;
+    bottom: 2rem;
+    outline: none;
+    display: flex;
+}
+
+#date_btn{
+    border: 1px solid #e2e2e2;
+    max-width: 8rem;
+    height: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    caret-color: transparent;
+    padding-left: 0.5rem;
+}
+
+.pastDate{
+    background: #CF3636;
+    color: #ffffff;
+}
+
+.futureDate{
+    background: #DBDBDB;
+    color: #000000;
+}
+
+#cancel_btn{
+    color: #CF3636;
+    background-color: #ffffff;
+    height: 2rem;
+    width: 7rem;
+    margin-left: 6rem;
+    border: 1px solid #CF3636;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#save_btn{
+    height: 2rem;
+    width: 7rem;
+    border-radius: 5px;
+    background: #17A2B8;
+    color: #ffffff;
+    border: none;
+    margin-left: 1rem;
+    cursor: pointer;
+
+}
+
+.checklist_box{
+    height: 22vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.task_input{
+    border: 1px solid #e2e2e2;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    display: flex;
+    align-items: center;
+    width: 29vw;
+    height: 5vh;
+    border-radius: 5px;
+}
+
+.input_box{
+    border: none;
+    outline: none;
+    flex: 1;
+    margin-left: 0.5rem;
+}

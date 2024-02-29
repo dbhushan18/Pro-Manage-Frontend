@@ -1,0 +1,67 @@
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.modal,
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 9999;
+
+}
+
+.overlay {
+    background: #303D438C;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modal_content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #ffffff;
+    width: 25vw;
+    height: 25vh;
+    border-radius: 15px;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    font-weight: 600;
+    z-index: 10000;
+}
+
+#confirmation {
+    color: #000000;
+}
+
+.confirm_btn{
+    width: 19vw;
+    height: 5vh;
+    background: #17A2B8;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.cancel_btn{
+    width: 19vw;
+    height: 5vh;
+    border: 1px solid #cf3636;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #CF3636;
+    cursor: pointer;
+    outline: none;
+}

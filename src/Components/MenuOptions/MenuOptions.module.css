@@ -1,0 +1,35 @@
+.more_icon{
+    height: 0.3rem;
+    cursor: pointer;
+}
+
+.options_menu{
+    position: relative;
+}
+
+.menu_items{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    right: 0.1rem;
+    width: 6.5rem;
+    font-size: 12px;
+    padding: 0.5rem;
+    font-weight: 600;
+    line-height: 1.4rem;
+    list-style: none;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px gray;
+    border-radius: 10px;
+}
+
+#delete_btn{
+    color: #CF3636;
+}
+
+.menu_items li{
+    cursor: pointer;
+}
+
+
