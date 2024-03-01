@@ -5,12 +5,13 @@ import expand from "../../assets/Board/collapseUp.png"
 import collapse from "../../assets/Board/collapseDown.png"
 import MenuOptions from "../MenuOptions/MenuOptions"
 import { v4 as uuidv4 } from 'uuid';
+import Loading from "../Loading/Loading"
 import { getAllTasks, changeCardState, updateTaskCheckedState } from '../../apis/tasks'
 
 function Card({ board_title, collapsed, filter }) {
     const chips_data = ["In Progress", "Backlog", "To-do", "Done"];
     const [cardData, setCardData] = useState([]);
-
+    const [loading, setLoading] = useState(true);
     const [collapsedTasks, setCollapsedTasks] = useState({});
 
     const toggleCollapseTasks = (cardId) => {
@@ -31,6 +32,7 @@ function Card({ board_title, collapsed, filter }) {
             if (!ownerId) return;
             const tasksData = await getAllTasks(ownerId, filter);
             setCardData(tasksData);
+            setLoading(false)
         }
         catch (err) {
             console.log(err)
@@ -95,6 +97,10 @@ function Card({ board_title, collapsed, filter }) {
             console.log(err);
         }
     };
+
+    if (loading) {
+        return <><Loading/></>;
+    }
 
     return (
         <>

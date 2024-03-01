@@ -11,7 +11,7 @@ export default function ProtectedRoute(props) {
     },[])
 
   return (
-    <div>{isActive  ? < Component /> : <Navigate to="/register"/>}</div>
+    <div>{isActive  ? < Component /> : <Navigate to="/"/>}</div>
   )
 }
 
