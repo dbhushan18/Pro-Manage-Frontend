@@ -52,6 +52,7 @@
 
 .checklist_top{
     display: flex;
+    margin-bottom: 0.8rem;
 }
 .checklist_top #checklist_count{
     font-size: 15px;

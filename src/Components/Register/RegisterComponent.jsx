@@ -57,7 +57,7 @@ function RegisterComponent() {
             const response = await RegisterUser({ ...data });
             if (response) {
                 toast.success("User Registered successfully!");
-                localStorage.setItem("token", JSON.stringify(response.token));
+                localStorage.setItem("token", response.token);
                 localStorage.setItem("owner", response.id)
                 localStorage.setItem("userName", response.name);
                 navigate('/board')
