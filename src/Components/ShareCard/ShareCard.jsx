@@ -42,7 +42,6 @@ function ShareCard() {
                     <>
                         <div className={styles.card_container}>
                             <img src={logo} alt="" id={styles.logo} />
-
                             <div className={styles.card}>
                                 <div className={styles.card_top}>
                                     <div className={styles.card_labels}>
