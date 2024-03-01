@@ -16,7 +16,7 @@ function App() {
       <BrowserRouter>
       <ToastContainer />
         <Routes>
-          <Route path="/" element={<RegisterPage key="register"/>}/>
+          <Route path="/register" element={<RegisterPage key="register"/>}/>
           <Route path="/login" element={<LoginPage key="login"/>}/>
           <Route path="/board" element={<ProtectedRoute Component= {HomePage} key="board"/>}/>
           <Route path="/analytics" element={<ProtectedRoute Component={AnalyticsPage} key="analytics"/>}/>
